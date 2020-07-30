@@ -17,7 +17,7 @@ function rand(t=Date.now()) { return parseInt(m.abs(m.sin(t)+m.cos(t))*10000000)
 function req(u)
 {
 	var xhr = new XMLHttpRequest();
-	xhr.open("Get", "https://www."+u);
+	xhr.open("GET", "https://"+u);
 	return new Promise(
 	(r)=>
 	{
