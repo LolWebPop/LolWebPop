@@ -1,0 +1,57 @@
+body, html, div, img, td, tr, table
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: center;
+	vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body
+{
+	background-color: #D6E3A4;
+	margin: 0 0 0 0;
+	color: #8DB600;
+}
+
+#btD{width:100%;}
+#cpr{width:15vw;}
+
+#ttl
+{
+	width: 100%;
+	background-color: #FF9933;
+	color: #FFDD33;
+}
+
+@media only screen and (min-width: 50px)
+{
+	#btI{max-width: 50vw;}
+	#cpI{max-width:75%;}
+	#ttl{font-size: 7vw;}
+}
+
+@media only screen and (min-width: 360px)
+{
+	#btI{max-width: 70vw;}
+	#cpI{max-width:85%;}
+	#ttl{font-size: 10vw;}
+}
+
+@media only screen and (min-height: 600px)
+{
+	#btI{max-width: 77.5vw;}
+	#cpI{max-width:92.5%;}
+	#ttl{font-size: 7.5vw;}
+}
+
+@media only screen and (min-width: 1200px)
+{
+	#cpI{max-width:100%;}
+	#btI{max-width: 85vw;}
+	#ttl{font-size: 5vw;}
+}
