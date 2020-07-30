@@ -9,7 +9,7 @@ async function bdy()
 	s = (await req("lolwebpop.github.io/LolWebPop/data.txt")).split('\n');
 	l=s.length;
 	vw();
-	req("lolwebpop.000webhostapp.com/iVisited.php");
+	//req("lolwebpop.000webhostapp.com/iVisited.php");
 }
 
 function rand(t=Date.now()) { return parseInt(m.abs(m.sin(t)+m.cos(t))*10000000) }
@@ -42,6 +42,6 @@ async function opn()
 async function vw()
 {
 	var v=(await req("lolwebpop.000webhostapp.com/dat.dat")).split('-'), d=new Date();
-	document.getElementById("cnt").innerhtml="<U><center><H2>Numbers Of Visitors TODAY("+['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][d.getDay()]+") Till Now : "+await req("lolwebpop.000webhostapp.com/Ddat.dat")+"<BR/>Numbers Of Visitors This MONTH("+["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][d.getMonth()]+") Till Now : "+v[0]+"<BR/>Numbers Of Visitors This YEAR("+d.getYear()+") Till Now : "+v[1]+"<BR/>Numbers Of Visitors Till Now : "+v[2]+"</H2></U></center>";
+	document.getElementById("cnt").innerHTML="<U><center><H5>Numbers Of Visitors TODAY("+['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][d.getDay()]+") Till Now : "+await req("lolwebpop.000webhostapp.com/Ddat.dat")+"<BR/>Numbers Of Visitors This MONTH("+["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][d.getMonth()]+") Till Now : "+v[0]+"<BR/>Numbers Of Visitors This YEAR("+d.getYear()+") Till Now : "+v[1]+"<BR/>Numbers Of Visitors Till Now : "+v[2]+"</H5></U></center>";
 }
 
