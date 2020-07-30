@@ -17,7 +17,7 @@ function rand(t=Date.now()) { return parseInt(m.abs(m.sin(t)+m.cos(t))*10000000)
 function req(u)
 {
 	var xhr = new XMLHttpRequest();
-	xhr.open("Get", "https://"+u);
+	xhr.open("Get", "https://www."+u);
 	return new Promise(
 	(r)=>
 	{
@@ -32,7 +32,7 @@ function req(u)
 async function opn()
 {
 	var URL = s[rand()%l]
-	URL = "www."+URL+(URL.indexOf('.')+1?"":".com")
+	URL = "https://www."+URL+(URL.indexOf('.')+1?"":".com")
 	con(URL)
 	var pg=window.open('',"_blank");
 	pg.document.write("<H1>Loading...");
